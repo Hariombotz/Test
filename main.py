@@ -10,8 +10,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
 async def send_welcome(message: types.Message):
-    await message.reply("Hey bestie! 💖 I'm Ananya, your BFF chatbot!
-How are you feeling today?")
+    await message.reply("""Hey bestie! 💖 I'm Ananya, your BFF chatbot!""")
 
 @dp.message_handler(commands=["mood"])
 async def mood_checkin(message: types.Message):
